@@ -1,0 +1,26 @@
+header{
+    position: relative;
+    z-index: 1;
+    .navbar{
+        background: var(--navbar-color);        
+        .container{
+            .navbar-brand{
+                .logoCabecera{
+                    width: 50px;
+                }
+            }
+            .collapse{
+                .navbar-nav{
+                    text-align: center;
+                    .nav-item{
+                        .link{
+                            text-decoration: none;
+                            color: var(--letrasPortada-color);
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

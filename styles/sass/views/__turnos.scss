@@ -1,0 +1,48 @@
+.turnos{
+    padding: 2rem;
+    .calendar{
+        text-align: center;
+        margin: auto;
+        width: 500px;
+        max-width: 80%;
+        border-radius: 3%;
+        @include sombra;
+        .mes{
+            background-color: var(--backgroundCard-color);
+        }
+        .dias{
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10px 0 10px;
+            .dia{
+                margin: 0;
+                font-weight: 400;
+            }
+            .nombre{
+                font-weight: 600;
+            }
+            .finde{
+                color: red;
+            }
+            .noLaboral{
+                opacity: 0.3;
+            }
+            .laboral{
+                cursor: pointer;
+            }
+            .empty{
+                opacity: 0;
+            }
+            .today{
+                background-color: var(--backgroundCard-color);
+                border-radius: 100%;
+                width: 25px;
+            }
+        }
+    }
+    .diaTurno{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}

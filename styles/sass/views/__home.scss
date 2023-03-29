@@ -1,0 +1,155 @@
+body{
+    background-color: var(--background-color);
+    main{
+        section{
+            .contenedorImg{
+                width: 100vw;
+                height: 60vw;
+                background-image: url(/assets/ImagenPortada.jpg);
+                background-size: cover;
+                position: absolute;
+                top: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .contenedorTitulo{
+                    flex-direction: column;
+                    justify-content: center;
+                    padding-top: 2rem;
+                    padding-left: 2rem;
+                    .title{
+                        @include titulo;
+                        position: relative;
+                        margin: 0;
+                    }
+                    .subtitle{
+                        @include subtitulo;
+                        color: var(--letrasPortada-color);
+                        margin: 0;
+                    }
+                    .lista{
+                        list-style: none;
+                        display: flex;
+                        gap: 2px;
+                        font-size: 0.5rem;
+                        color: var(--title-color);
+                        margin: 0;
+                        padding: 0;
+                        text-transform: uppercase;
+                        margin-bottom: 1rem;
+                    }
+                    .reserva{
+                        text-decoration: none;
+                        color: var(--letrasPortada-color);
+                        font-size: 0.5rem;
+                        font-weight: 300;
+                        border: 1px solid var(--letrasPortada-color);
+                        padding: 0.3rem 1rem 0.3rem 1rem;
+                        margin-left: 2rem;
+                        .icon{
+                            width: 30px;
+                            margin-top: 8px;
+                        }
+                    }
+                }
+            }
+        }
+        .seccionEntendimiento{
+            margin-top: 48vw;
+            margin-bottom: 1rem;
+            .imgsPortada{
+                margin: 15px;
+                position: relative;
+                display: flex;
+                height: 240px;
+                .img1, .img2{
+                    position: absolute;
+                    width: 136px;
+                    height: 204px;
+                }
+                .img1{
+                    top: 0;
+                    left: 30px;
+                    rotate: -5deg;
+                    @include sombra;
+                }
+                .img2{
+                    bottom: 0px;
+                    right: 30px;
+                    rotate: 5deg;
+                    @include sombra;
+                }
+            }
+            .cardExplicacion{
+                background-color: var(--backgroundCard-color);
+                max-width: 90%;
+                margin: auto;
+                padding: 1rem;
+                text-align: center;
+                .title{
+                    @include titulo;
+                }
+                .subtitle{
+                    @include subtitulo;
+                    color: var(--letters-colors);
+                }
+                .par{
+                    font-size: 0.7rem;
+                    padding-bottom: 1rem;
+                    border-bottom: 1px solid #dfdfdf;
+                }
+                .contenedorDatos{
+                    display: flex;
+                    justify-content: space-around;
+                    .datos{
+                        display: flex;
+                        gap: 10px;
+                        .icon{
+                            width: 10vw;
+                            height: 10vw;
+                        }
+                        .datosDetalles{
+                            .dato, .detalle{
+                                margin: 0;
+                            }
+                            .dato{
+                                font-weight: 700;
+                            }
+                            .detalle{
+                                font-size: 0.7rem;
+                            }
+                        }
+                    }
+                    .dato1{
+                        border-right: 1px solid #dfdfdf;
+                        padding-right: 2rem;
+                    }
+                }
+            }
+        }
+        .servicios{
+            text-align: center;
+            width: 100vw;
+            padding: 0;
+            .presentacionServicios{
+                padding: 1rem;
+                position: relative;
+                background-color: var(--backgroundCard-color);
+                .lineas{
+                    position: absolute;
+                    opacity: 5%;
+                }
+                .title{
+                    @include titulo;
+                    margin: 0;
+                }
+                .subtitle{
+                    @include subtitulo
+                }
+                .par{
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
+}
