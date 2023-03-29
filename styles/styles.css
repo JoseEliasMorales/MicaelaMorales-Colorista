@@ -216,6 +216,9 @@ body main .servicios .presentacionServicios .par {
 
 .turnos {
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .turnos .calendar {
   text-align: center;
@@ -261,6 +264,18 @@ body main .servicios .presentacionServicios .par {
 .turnos .diaTurno {
   text-align: center;
   font-size: 1.5rem;
+}
+.turnos .boton {
+  background-color: var(--backgroundCard-color);
+  color: white;
+  width: 35vw;
+  text-align: center;
+  padding: 10px;
+  border-radius: 25px;
+}
+.turnos .boton .btnText {
+  text-decoration: none;
+  color: black;
 }
 
 /*# sourceMappingURL=styles.css.map */

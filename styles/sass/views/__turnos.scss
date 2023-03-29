@@ -1,5 +1,8 @@
 .turnos{
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     .calendar{
         text-align: center;
         margin: auto;
@@ -44,5 +47,17 @@
     .diaTurno{
         text-align: center;
         font-size: 1.5rem;
+    }
+    .boton{
+        background-color: var(--backgroundCard-color);
+        color: white;
+        width: 35vw;
+        text-align: center;
+        padding: 10px;
+        border-radius: 25px;
+        .btnText{
+            text-decoration: none;
+            color: black;
+        }
     }
 }
