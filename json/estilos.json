@@ -1,22 +1,22 @@
 [
     {
         "estilo":"Balayage",
-        "img":"./assets/bala.jpg",
+        "img":"/assets/bala.jpg",
         "descripcion":"Lorem ipsum"
     },
     {
-        "estilo":"Balayage",
-        "img":"./assets/bala.jpg",
+        "estilo":"Baño de Color",
+        "img":"./assets/color.jpg",
         "descripcion":"Lorem ipsum"
     },
     {
-        "estilo":"Balayage",
-        "img":"./assets/bala.jpg",
+        "estilo":"Corte",
+        "img":"./assets/corte.jpg",
         "descripcion":"Lorem ipsum"
     },
     {
-        "estilo":"Balayage",
-        "img":"./assets/bala.jpg",
+        "estilo":"Mechas",
+        "img":"./assets/mechas.jpg",
         "descripcion":"Lorem ipsum"
     }
 ]

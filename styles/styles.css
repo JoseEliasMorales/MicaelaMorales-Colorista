@@ -278,4 +278,42 @@ body main .servicios .presentacionServicios .par {
   color: black;
 }
 
+.contenedorCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin: auto;
+  margin-top: -10px;
+  position: relative;
+  max-width: 90%;
+}
+.contenedorCards .cards {
+  width: 150px;
+  height: 200px;
+  border: 0.5px solid rgb(255, 238, 238);
+  border-radius: 5px;
+  position: relative;
+}
+.contenedorCards .cards .estilo {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  padding: 5px;
+}
+.contenedorCards .cards .contenedorDescripcion {
+  position: relative;
+  bottom: 33%;
+  margin: auto;
+  background-color: rgba(248, 248, 248, 0.5);
+}
+.contenedorCards .cards .contenedorDescripcion .nombreEstilo {
+  position: relative;
+  bottom: 33%;
+  margin: auto;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  font-family: var(--subtituloPortada-font);
+}
+
 /*# sourceMappingURL=styles.css.map */
