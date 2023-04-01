@@ -1,20 +1,24 @@
 [
     {
+        "id":1,
         "estilo":"Balayage",
         "img":"/assets/bala.jpg",
         "descripcion":"Lorem ipsum"
     },
     {
+        "id":2,
         "estilo":"Baño de Color",
         "img":"./assets/color.jpg",
         "descripcion":"Lorem ipsum"
     },
     {
+        "id":3,
         "estilo":"Corte",
         "img":"./assets/corte.jpg",
         "descripcion":"Lorem ipsum"
     },
     {
+        "id":4,
         "estilo":"Mechas",
         "img":"./assets/mechas.jpg",
         "descripcion":"Lorem ipsum"

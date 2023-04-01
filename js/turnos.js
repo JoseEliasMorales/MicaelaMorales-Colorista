@@ -153,9 +153,11 @@ for (let i = 1; i <= mesProximo.dias; i++) {
 }
 
 function buscarDias(numero) {
-    let numeroDia = new Date(mesActual.mes + numero + "," + anio);
+    let numeroDia = new Date(mesActualIng + numero + "," + anio);
     let buscarDia = numeroDia.getDay();
+    console.log(buscarDia);
     let definirDia = dias[buscarDia].dia;
+    console.log(definirDia);
     let printDia = document.getElementById(definirDia);
     printDia.innerHTML += `
         <p onclick="dia(${numero})" class="dia" id="dia${numero}">${numero}</p>
@@ -167,7 +169,7 @@ function buscarDias(numero) {
 }
 
 function diasVacios(numero) {
-    let numeroDia = new Date(mesActual.mes + numero + "," + anio);
+    let numeroDia = new Date(mesActualIng + numero + "," + anio);
     let buscarDia = numeroDia.getDay();
     if (numero === 1) {
         if (buscarDia + 1 > numero) {
@@ -186,6 +188,7 @@ function buscarDiasProximoMes(numero) {
     let numeroDia = new Date(mesProximoIng + numero + "," + anio);
     let buscarDia = numeroDia.getDay();
     let definirDia = dias[buscarDia].dia;
+    
     let printDiaProx = document.getElementById(definirDia + "Prox");
     printDiaProx.innerHTML += `
         <p onclick="diaProximo(${numero})" class="dia">${numero}</p>

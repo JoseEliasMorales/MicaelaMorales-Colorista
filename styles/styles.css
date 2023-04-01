@@ -9,10 +9,10 @@ header .navbar {
 header .navbar .container .navbar-brand .logoCabecera {
   width: 50px;
 }
-header .navbar .container .collapse .navbar-nav {
+header .navbar .container .lista {
   text-align: center;
 }
-header .navbar .container .collapse .navbar-nav .nav-item .link {
+header .navbar .container .lista .navbar-nav .nav-item .link {
   text-decoration: none;
   color: var(--letrasPortada-color);
 }
@@ -314,6 +314,13 @@ body main .servicios .presentacionServicios .par {
   color: rgb(0, 0, 0);
   font-size: 1rem;
   font-family: var(--subtituloPortada-font);
+}
+.contenedorCards .cards .logoNegro {
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  right: 10px;
+  width: 50px;
 }
 
 /*# sourceMappingURL=styles.css.map */

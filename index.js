@@ -10,8 +10,8 @@ fetch(listaDeEstilos)
                                             <img class="estilo" src="${estilo.img}">
                                             <div class="contenedorDescripcion">
                                                 <h4 class="nombreEstilo">${estilo.estilo}</h4>
-                                                <p class
                                             </div>
+                                            <img class="logoNegro" src="./assets/logoNegro.png">
                                         </div>
                                         `
         })
